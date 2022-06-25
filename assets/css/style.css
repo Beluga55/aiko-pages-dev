@@ -1,0 +1,144 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  background-color: #faaca8;
+  background-image: linear-gradient(19deg, #faaca8 0%, #ddd6f3 100%);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-bottom {
+  margin-bottom: 1rem;
+}
+
+.card__container {
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: auto;
+  border-radius: 6px;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 5px 0.5px white;
+  padding: 2rem;
+}
+
+.card__image {
+  width: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.card__content-wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.fa-heart {
+  color: #fd627c;
+}
+
+.card__content-2 p {
+  font-weight: 500;
+}
+
+.about__title,
+.games__title,
+.social__title,
+.footer__title {
+  font-size: 14px;
+  border-bottom: 1.5px solid #fd627c;
+  font-weight: 500;
+}
+
+.about__description {
+  font-size: 13px;
+  margin-top: 0.75rem;
+}
+
+.games__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0.5rem;
+}
+
+.games__content {
+  display: grid;
+  row-gap: 0.25rem;
+}
+
+.games__content .games__description:first-child {
+  margin-top: 0.25rem;
+}
+
+.games__description {
+  display: flex;
+  align-items: center;
+  column-gap: 0.25rem;
+  font-size: 13px;
+}
+
+.bxs-check-square {
+  color: #fd626f;
+}
+
+.social__links-first,
+.social__links-second {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0.5rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.social__link-first,
+.social__link-second {
+  background-image: linear-gradient(19deg, #faaca8 0%, #fd626f 100%);
+  padding: 8px;
+  border-radius: 4px;
+  background-size: 200% auto;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.social__link-first:hover,
+.social__link-second:hover {
+  background-position: right center;
+}
+
+.social__link-first a,
+.social__link-second a {
+  font-size: 13px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.main {
+  overflow: hidden;
+}
